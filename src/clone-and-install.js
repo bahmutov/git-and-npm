@@ -18,7 +18,6 @@ var tmpdir = require('os').tmpdir;
 var pkg = require('../package.json');
 var chdir = require('chdir-promise');
 var quote = require('quote');
-// var release = require('release-it').execute;
 
 function verifyRepo(repo) {
   verify.unemptyString(repo, 'expected github repo string');
@@ -84,11 +83,11 @@ function cloneAndInstall(repo) {
   return q(cleanupTempFolder(tmpFolder))
     .then(clone)
     .then(function () {
-      console.log('cloned', repo, 'to', tmpFolder);
+      console.log('cloned', quote(repo), 'to', quote(tmpFolder));
     })
     .then(install)
     .then(function () {
-      console.log('tested npm module in', tmpFolder);
+      console.log('installed npm module from', quote(repo), 'in', quote(tmpFolder));
       return tmpFolder;
     }, function (err) {
       console.log('FAILED test for npm module in', tmpFolder);
