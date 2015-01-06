@@ -1,0 +1,39 @@
+{
+  "name": "git-and-npm",
+  "version": "0.0.1",
+  "description": "Utilities for working with github and NPM registry together",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bahmutov/git-and-npm.git"
+  },
+  "keywords": [
+    "git",
+    "github",
+    "npm",
+    "node",
+    "package",
+    "repo",
+    "repository",
+    "clone"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/git-and-npm/issues"
+  },
+  "homepage": "https://github.com/bahmutov/git-and-npm",
+  "dependencies": {
+    "chdir-promise": "0.2.1",
+    "check-more-types": "1.1.1",
+    "check-types": "1.4.0",
+    "ggit": "0.6.1",
+    "lazy-ass": "0.5.3",
+    "lodash": "2.4.1",
+    "q": "1.1.2",
+    "quote": "0.2.2"
+  }
+}
