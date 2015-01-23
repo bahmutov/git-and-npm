@@ -30,16 +30,18 @@
     "chdir-promise": "0.2.1",
     "check-more-types": "1.1.1",
     "check-types": "1.4.0",
-    "ggit": "0.6.1",
+    "ggit": "0.6.2",
     "lazy-ass": "0.5.3",
     "lodash": "2.4.1",
     "mkdirp": "0.5.0",
-    "q": "1.1.2",
-    "quote": "0.2.2",
+    "q": "2.0.2",
+    "quote": "0.3.0",
     "rimraf": "2.2.8"
   },
   "devDependencies": {
     "pre-git": "0.1.1"
   },
-  "pre-commit": ["npm version"]
+  "pre-commit": [
+    "npm version"
+  ]
 }
